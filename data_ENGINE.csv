@@ -1,0 +1,26 @@
+﻿Module|PgmName|PgmSeq|FileName|Level|OpenMode|RecFM|MinLRECL|MaxLRECL|DDName|FileType|Sourced From
+ENGINE|ENGINE|1|IN-FIX|FD|I|F|0|0|INFILE|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|IN-VAR|FD|I|V|1|32756|INFILE|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|LOG-FILE|FD|O|F|170|170|LOG|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|DISCARD-FIX|FD|O|F|0|0|DISCARD|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|DISCARD-VAR|FD|O|V|1|32752|DISCARD|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|MIG-FILE|FD|O|V|1|27990|MIG|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|EEO-FILE|FD|O|V|1|27990|EEOR|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|FDD-FILE|FD|O|F|156|156|FDD|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|TRACE-FILE|FD|O O|V|1|32752|TRACEOUT|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|ALT1-FILE|FD|I I|F|100|100|ALT1|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|ENGINE|1|ALT2-FILE|FD|I I|F|100|100|ALT2|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|LOAD-OPTIONS|3|OPTIONS-FILE|FD|I|F|80|80|OPTIONS|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|SUMDLL|6|CONTROL-FILE|FD|I|F|80|80|DLL|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|LOADDLL|7|CONTROL-FILE|FD|I|F|80|80|DLL|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|LOADDLL|7|PREFIELD-FILE|FD|O|F|128|128|PRET|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|DAR|9|DAR-FILE|FD|O|F|0|0|DAR|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|DAR|9|DAR-FILE-HTM|FD|O|V|1|32752|DARHTM|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|DAR|9|REF-FILE|FD|O|F|0|0|REF|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|DAR|9|KEYLIST-FILE|FD|O|F|0|0|KEYLIST|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|MAP|24|MAPP-FILE|FD|O|F|80|80|MAPP|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|MAP|24|MAPN-FILE|FD|O|F|80|80|MAPN|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|MAP|24|PREFIELD-FILE|FD|SORTIN|F|128|128|PRET|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|MAP|24|SORT-PREFIELD-FILE|SD|SORT|V|0|0|SORTWK|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|SAMPLE|25|SAMPLE-FIX|FD|O|U|1|32752|SAMPLE|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
+ENGINE|SAMPLE|25|SAMPLE-VAR|FD|O|V|1|32752|SAMPLE|SEQUENTIAL|C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\ENGINE.cbl
