@@ -5,6 +5,8 @@ VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "ParseCOB", "ParseCOB.vbproj", "{8479A511-45EC-4953-B85E-17CE2312FC79}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupParseCob", "..\SetupParseCob\SetupParseCob.vdproj", "{E60EB184-9CAD-470E-A681-BFC779A3FE75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{8479A511-45EC-4953-B85E-17CE2312FC79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8479A511-45EC-4953-B85E-17CE2312FC79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8479A511-45EC-4953-B85E-17CE2312FC79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E60EB184-9CAD-470E-A681-BFC779A3FE75}.Debug|Any CPU.ActiveCfg = Debug
+		{E60EB184-9CAD-470E-A681-BFC779A3FE75}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

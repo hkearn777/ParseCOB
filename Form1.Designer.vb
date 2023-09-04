@@ -29,7 +29,7 @@ Partial Class Form1
         Me.txtDataFileName = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.txtProcFileName = New System.Windows.Forms.TextBox()
+        Me.txtParaFileName = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtDelimiter = New System.Windows.Forms.TextBox()
         Me.btnParseCob = New System.Windows.Forms.Button()
@@ -44,31 +44,36 @@ Partial Class Form1
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txtPgmFileName = New System.Windows.Forms.TextBox()
         Me.btnFindInclude = New System.Windows.Forms.Button()
-        Me.txtIncludeFileName = New System.Windows.Forms.TextBox()
+        Me.txtIncludeFolderName = New System.Windows.Forms.TextBox()
         Me.btnOutputFiles = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCallsFileName = New System.Windows.Forms.TextBox()
+        Me.Label8 = New System.Windows.Forms.Label()
+        Me.txtExtension = New System.Windows.Forms.TextBox()
+        Me.lblCopybookMessage = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.txtPlantUmlFilename = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'btnFindInFile
         '
         Me.btnFindInFile.Location = New System.Drawing.Point(13, 13)
         Me.btnFindInFile.Name = "btnFindInFile"
-        Me.btnFindInFile.Size = New System.Drawing.Size(111, 34)
+        Me.btnFindInFile.Size = New System.Drawing.Size(128, 64)
         Me.btnFindInFile.TabIndex = 0
-        Me.btnFindInFile.Text = "Infile"
+        Me.btnFindInFile.Text = "Main Program File"
         Me.btnFindInFile.UseVisualStyleBackColor = True
         '
         'txtInFile
         '
-        Me.txtInFile.Location = New System.Drawing.Point(154, 17)
+        Me.txtInFile.Location = New System.Drawing.Point(154, 32)
         Me.txtInFile.Name = "txtInFile"
         Me.txtInFile.Size = New System.Drawing.Size(1027, 26)
         Me.txtInFile.TabIndex = 1
-        Me.txtInFile.Text = "C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB\" &
-    "ENGINE.cbl"
         '
         'btnOutFolder
         '
-        Me.btnOutFolder.Location = New System.Drawing.Point(14, 116)
+        Me.btnOutFolder.Location = New System.Drawing.Point(14, 159)
         Me.btnOutFolder.Name = "btnOutFolder"
         Me.btnOutFolder.Size = New System.Drawing.Size(111, 31)
         Me.btnOutFolder.TabIndex = 2
@@ -77,15 +82,14 @@ Partial Class Form1
         '
         'txtOutFolder
         '
-        Me.txtOutFolder.Location = New System.Drawing.Point(154, 118)
+        Me.txtOutFolder.Location = New System.Drawing.Point(154, 161)
         Me.txtOutFolder.Name = "txtOutFolder"
         Me.txtOutFolder.Size = New System.Drawing.Size(1027, 26)
         Me.txtOutFolder.TabIndex = 3
-        Me.txtOutFolder.Text = "C:\Users\906074897\Documents\All Projects\State of Illinois\VS Projects\ParseCOB"
         '
         'txtDataFileName
         '
-        Me.txtDataFileName.Location = New System.Drawing.Point(436, 167)
+        Me.txtDataFileName.Location = New System.Drawing.Point(419, 208)
         Me.txtDataFileName.Name = "txtDataFileName"
         Me.txtDataFileName.Size = New System.Drawing.Size(174, 26)
         Me.txtDataFileName.TabIndex = 5
@@ -93,7 +97,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(382, 169)
+        Me.Label2.Location = New System.Drawing.Point(365, 210)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 20)
         Me.Label2.TabIndex = 6
@@ -102,23 +106,23 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(646, 170)
+        Me.Label3.Location = New System.Drawing.Point(613, 211)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(86, 20)
+        Me.Label3.Size = New System.Drawing.Size(95, 20)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Procedure:"
+        Me.Label3.Text = "Paragraphs:"
         '
-        'txtProcFileName
+        'txtParaFileName
         '
-        Me.txtProcFileName.Location = New System.Drawing.Point(738, 167)
-        Me.txtProcFileName.Name = "txtProcFileName"
-        Me.txtProcFileName.Size = New System.Drawing.Size(168, 26)
-        Me.txtProcFileName.TabIndex = 8
+        Me.txtParaFileName.Location = New System.Drawing.Point(705, 208)
+        Me.txtParaFileName.Name = "txtParaFileName"
+        Me.txtParaFileName.Size = New System.Drawing.Size(168, 26)
+        Me.txtParaFileName.TabIndex = 8
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(155, 224)
+        Me.Label4.Location = New System.Drawing.Point(14, 252)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(75, 20)
         Me.Label4.TabIndex = 9
@@ -126,7 +130,7 @@ Partial Class Form1
         '
         'txtDelimiter
         '
-        Me.txtDelimiter.Location = New System.Drawing.Point(237, 224)
+        Me.txtDelimiter.Location = New System.Drawing.Point(96, 252)
         Me.txtDelimiter.Name = "txtDelimiter"
         Me.txtDelimiter.Size = New System.Drawing.Size(45, 26)
         Me.txtDelimiter.TabIndex = 10
@@ -135,9 +139,9 @@ Partial Class Form1
         '
         'btnParseCob
         '
-        Me.btnParseCob.Location = New System.Drawing.Point(18, 300)
+        Me.btnParseCob.Location = New System.Drawing.Point(18, 295)
         Me.btnParseCob.Name = "btnParseCob"
-        Me.btnParseCob.Size = New System.Drawing.Size(107, 33)
+        Me.btnParseCob.Size = New System.Drawing.Size(123, 48)
         Me.btnParseCob.TabIndex = 11
         Me.btnParseCob.Text = "ParseCob"
         Me.btnParseCob.UseVisualStyleBackColor = True
@@ -190,7 +194,7 @@ Partial Class Form1
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(159, 168)
+        Me.Label7.Location = New System.Drawing.Point(155, 211)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(45, 20)
         Me.Label7.TabIndex = 17
@@ -198,44 +202,108 @@ Partial Class Form1
         '
         'txtPgmFileName
         '
-        Me.txtPgmFileName.Location = New System.Drawing.Point(211, 167)
+        Me.txtPgmFileName.Location = New System.Drawing.Point(206, 207)
         Me.txtPgmFileName.Name = "txtPgmFileName"
-        Me.txtPgmFileName.Size = New System.Drawing.Size(142, 26)
+        Me.txtPgmFileName.Size = New System.Drawing.Size(153, 26)
         Me.txtPgmFileName.TabIndex = 18
         '
         'btnFindInclude
         '
-        Me.btnFindInclude.Location = New System.Drawing.Point(12, 68)
+        Me.btnFindInclude.Location = New System.Drawing.Point(12, 83)
         Me.btnFindInclude.Name = "btnFindInclude"
-        Me.btnFindInclude.Size = New System.Drawing.Size(112, 31)
+        Me.btnFindInclude.Size = New System.Drawing.Size(129, 55)
         Me.btnFindInclude.TabIndex = 19
-        Me.btnFindInclude.Text = "Includes"
+        Me.btnFindInclude.Text = "Include/Copy Folder"
         Me.btnFindInclude.UseVisualStyleBackColor = True
         '
-        'txtIncludeFileName
+        'txtIncludeFolderName
         '
-        Me.txtIncludeFileName.Location = New System.Drawing.Point(154, 70)
-        Me.txtIncludeFileName.Name = "txtIncludeFileName"
-        Me.txtIncludeFileName.Size = New System.Drawing.Size(1027, 26)
-        Me.txtIncludeFileName.TabIndex = 20
-        Me.txtIncludeFileName.Text = "C:\Users\906074897\Documents\All Projects\Engine"
+        Me.txtIncludeFolderName.Location = New System.Drawing.Point(154, 85)
+        Me.txtIncludeFolderName.Name = "txtIncludeFolderName"
+        Me.txtIncludeFolderName.Size = New System.Drawing.Size(1027, 26)
+        Me.txtIncludeFolderName.TabIndex = 20
         '
         'btnOutputFiles
         '
-        Me.btnOutputFiles.Location = New System.Drawing.Point(18, 164)
+        Me.btnOutputFiles.Location = New System.Drawing.Point(18, 207)
         Me.btnOutputFiles.Name = "btnOutputFiles"
         Me.btnOutputFiles.Size = New System.Drawing.Size(106, 29)
         Me.btnOutputFiles.TabIndex = 21
         Me.btnOutputFiles.Text = "Output Files"
         Me.btnOutputFiles.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(898, 213)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(47, 20)
+        Me.Label1.TabIndex = 22
+        Me.Label1.Text = "Calls:"
+        '
+        'txtCallsFileName
+        '
+        Me.txtCallsFileName.Location = New System.Drawing.Point(951, 210)
+        Me.txtCallsFileName.Name = "txtCallsFileName"
+        Me.txtCallsFileName.Size = New System.Drawing.Size(175, 26)
+        Me.txtCallsFileName.TabIndex = 23
+        '
+        'Label8
+        '
+        Me.Label8.AutoSize = True
+        Me.Label8.Location = New System.Drawing.Point(154, 118)
+        Me.Label8.Name = "Label8"
+        Me.Label8.Size = New System.Drawing.Size(83, 20)
+        Me.Label8.TabIndex = 26
+        Me.Label8.Text = "Extension:"
+        '
+        'txtExtension
+        '
+        Me.txtExtension.Location = New System.Drawing.Point(244, 118)
+        Me.txtExtension.Name = "txtExtension"
+        Me.txtExtension.Size = New System.Drawing.Size(44, 26)
+        Me.txtExtension.TabIndex = 27
+        '
+        'lblCopybookMessage
+        '
+        Me.lblCopybookMessage.AutoSize = True
+        Me.lblCopybookMessage.BackColor = System.Drawing.SystemColors.Info
+        Me.lblCopybookMessage.Location = New System.Drawing.Point(14, 361)
+        Me.lblCopybookMessage.Name = "lblCopybookMessage"
+        Me.lblCopybookMessage.Size = New System.Drawing.Size(57, 20)
+        Me.lblCopybookMessage.TabIndex = 28
+        Me.lblCopybookMessage.Text = "Label9"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(868, 255)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(77, 20)
+        Me.Label9.TabIndex = 29
+        Me.Label9.Text = "PlantUml:"
+        '
+        'txtPlantUmlFilename
+        '
+        Me.txtPlantUmlFilename.Location = New System.Drawing.Point(951, 251)
+        Me.txtPlantUmlFilename.Name = "txtPlantUmlFilename"
+        Me.txtPlantUmlFilename.Size = New System.Drawing.Size(175, 26)
+        Me.txtPlantUmlFilename.TabIndex = 30
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1203, 407)
+        Me.Controls.Add(Me.txtPlantUmlFilename)
+        Me.Controls.Add(Me.Label9)
+        Me.Controls.Add(Me.lblCopybookMessage)
+        Me.Controls.Add(Me.txtExtension)
+        Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.txtCallsFileName)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnOutputFiles)
-        Me.Controls.Add(Me.txtIncludeFileName)
+        Me.Controls.Add(Me.txtIncludeFolderName)
         Me.Controls.Add(Me.btnFindInclude)
         Me.Controls.Add(Me.txtPgmFileName)
         Me.Controls.Add(Me.Label7)
@@ -247,7 +315,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnParseCob)
         Me.Controls.Add(Me.txtDelimiter)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.txtProcFileName)
+        Me.Controls.Add(Me.txtParaFileName)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtDataFileName)
@@ -269,7 +337,7 @@ Partial Class Form1
     Friend WithEvents txtDataFileName As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents txtProcFileName As TextBox
+    Friend WithEvents txtParaFileName As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents txtDelimiter As TextBox
     Friend WithEvents btnParseCob As Button
@@ -284,6 +352,13 @@ Partial Class Form1
     Friend WithEvents Label7 As Label
     Friend WithEvents txtPgmFileName As TextBox
     Friend WithEvents btnFindInclude As Button
-    Friend WithEvents txtIncludeFileName As TextBox
+    Friend WithEvents txtIncludeFolderName As TextBox
     Friend WithEvents btnOutputFiles As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtCallsFileName As TextBox
+    Friend WithEvents Label8 As Label
+    Friend WithEvents txtExtension As TextBox
+    Friend WithEvents lblCopybookMessage As Label
+    Friend WithEvents Label9 As Label
+    Friend WithEvents txtPlantUmlFilename As TextBox
 End Class
